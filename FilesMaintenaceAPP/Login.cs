@@ -30,12 +30,8 @@ namespace FilesMaintenaceAPP
                 var option = new SqlParameter("@Option", 2);
                 var username = new SqlParameter("username", txbUsusario.Text);
                 var password = new SqlParameter("password",txbPassword.Text);
-
-                var respuesta = db.Database.ExecuteSqlCommand("exec Sp_Authenticate @Option,@UserName,@Password",
-                                parameters: new[] { option, username, password });
-                //prueba de lectura para benjamin//
-                //Segunda prueba de Github
-                //tercera prueba de github 
+                //Ejecucion del SP
+                var result = db.Database.ExecuteSqlCommand("EXEC dbo.sp_Login @Option, @username, @password", option, username, password);
 
             }
         }
