@@ -33,6 +33,9 @@ namespace FilesMaintenaceAPP
 
                 var respuesta = db.Database.ExecuteSqlCommand("exec Sp_Authenticate @Option,@UserName,@Password",
                                 parameters: new[]{ option, username, password});
+                //prueba de lectura para benjamin//
+
+
             }
         }
     }
