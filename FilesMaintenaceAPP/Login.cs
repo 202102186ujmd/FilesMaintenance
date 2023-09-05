@@ -32,7 +32,7 @@ namespace FilesMaintenaceAPP
                 var password = new SqlParameter("password",txbPassword.Text);
 
                 var respuesta = db.Database.ExecuteSqlCommand("exec Sp_Authenticate @Option,@UserName,@Password",
-                                
+                                parameters: new[] { option, username, password });
                 //prueba de lectura para benjamin//
                 //Segunda prueba de Github
 
