@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="3c6f32a3-0b2e-4bd0-bcb9-68e2173ab2c2" ChangeDateTime="09/05/2023 00:25:01">
+    <Property Name="ElementName" Value="[dbo].[TipoArchivo].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TipoArchivo]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdFileType" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a67fe966-f0ec-4a74-8903-2b20e6101222" ChangeDateTime="09/05/2023 00:26:07">
+    <Property Name="ElementName" Value="[dbo].[Process].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Process]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="IdProcess" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f2d25971-601f-4206-9d09-b8945f748e61" ChangeDateTime="09/05/2023 00:26:25">
+    <Property Name="ElementName" Value="[dbo].[Process].[Nombre]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Process]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Path" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ad15895a-db30-4462-845e-d3bf376e42e8" ChangeDateTime="09/05/2023 00:26:38">
+    <Property Name="ElementName" Value="[dbo].[Process].[Ruta]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Process]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Date" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0dddfb31-8d53-4eef-91b3-ac1f664ae3d1" ChangeDateTime="09/05/2023 00:26:51">
+    <Property Name="ElementName" Value="[dbo].[Process].[Fecha]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[Process]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FileCount" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="09dac10c-83a7-4635-85c1-a47d95d61640" ChangeDateTime="09/05/2023 00:29:58">
+    <Property Name="ElementName" Value="[dbo].[ProcessDetails].[Weight]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ProcessDetails]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Weight_File" />
+  </Operation>
+</Operations>
