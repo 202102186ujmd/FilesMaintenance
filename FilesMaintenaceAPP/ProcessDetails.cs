@@ -19,5 +19,6 @@ namespace FilesMaintenaceAPP
         public Nullable<int> Weight_File { get; set; }
         public string Extension { get; set; }
         public Nullable<System.DateTime> DeleteDate { get; set; }
+        public string FileName { get; set; }
     }
 }

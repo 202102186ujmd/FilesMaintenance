@@ -31,11 +31,20 @@ namespace FilesMaintenaceAPP
                 var username = new SqlParameter("username", txbUsusario.Text);
                 var password = new SqlParameter("password",txbPassword.Text);
                
-                //Ejecucion del SP
-               
+                //Creacion de objeto de retorno del procedimiento almacenado
                 var Respuesta =db.Sp_Authenticate((int)option.Value,
                     username.Value.ToString(), password.Value.ToString()); 
 
+                //Validacion de respuesta
+                if(Respuesta.SingleOrDefault() == 1)
+                {
+                    MessageBox.Show("Bienvenido al sistema");
+
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o contraseña incorrecta");
+                }
             }
         }
     }

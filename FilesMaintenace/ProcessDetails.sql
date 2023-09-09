@@ -2,7 +2,8 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
     [IdProcess] INT NULL, 
-    [Weight_File] INT NULL, 
-    [Extension] NCHAR(4) NULL, 
+    [FileName] NVARCHAR(MAX) ,
+    [Weight_File] BIGINT NULL, 
+    [Extension] NCHAR(5) NULL, 
     [DeleteDate] DATETIME NULL
 )

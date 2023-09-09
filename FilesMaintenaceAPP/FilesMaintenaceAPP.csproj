@@ -63,6 +63,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>FilesModel.edmx</DependentUpon>
     </Compile>
+    <Compile Include="frmprocess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprocess.Designer.cs">
+      <DependentUpon>frmprocess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GrdData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GrdData.Designer.cs">
+      <DependentUpon>GrdData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +95,12 @@
     <Compile Include="Usuarios.cs">
       <DependentUpon>FilesModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmprocess.resx">
+      <DependentUpon>frmprocess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GrdData.resx">
+      <DependentUpon>GrdData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
